@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Codechef {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            int basic = sc.nextInt();
+            double hra, da;
+            if (basic < 1500) {
+                hra = basic * 0.1;  
+                da = basic * 0.9;   
+            } else {
+                hra = 500;          
+                da = basic * 0.98;  
+            }
+            double gross = basic + hra + da;
+            System.out.printf("%.2f\n", gross);
+        }
+        sc.close();
+    }
+}
