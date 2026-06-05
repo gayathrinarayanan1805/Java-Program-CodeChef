@@ -1,0 +1,35 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner sc = new Scanner(System.in);
+	    int N = sc.nextInt();
+	    int counta=0;
+	    int countb=0;
+	    int[] arr = new int[N];
+	    for(int i=0;i<N;i++){
+	        arr[i]=sc.nextInt();
+	    }
+	    for(int i=0;i<N;i++){
+	        if(arr[i]%2 == 0){
+	            counta++;
+	        }
+	        else{
+	            countb++;
+	        }
+	    }
+	    if(counta>countb){
+	        System.out.println("READY FOR BATTLE");
+	    }
+	    else{
+	        System.out.println("NOT READY");
+	    }
+	    
+		// your code goes here
+
+	}
+}
